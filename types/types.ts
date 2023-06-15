@@ -6,3 +6,7 @@ export type ButtonProps = {
   onClick?: () => {};
   type: "button" | "submit" | "reset";
 };
+
+export type LogoProps = {
+  src: string;
+};

@@ -1,5 +1,7 @@
-import "./globals.css";
+import Header from "@/components/Header/Header";
 import { PT_Sans } from "next/font/google";
+import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -16,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={pt_sans.className} suppressHydrationWarning={true}>
+        <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
