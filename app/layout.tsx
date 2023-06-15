@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import { PT_Sans } from "next/font/google";
 import "./globals.css";
+import "swiper/css";
 import Footer from "@/components/Footer/Footer";
 
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });

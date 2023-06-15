@@ -6,6 +6,23 @@
   width: 100%;
 } */
 
+.swiper-wrapper {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.swiper-scrollbar {
+  bottom: 15px !important;
+  opacity: 1 !important;
+  background-color: #525252 !important;
+}
+
+.swiper-scrollbar-drag {
+  background: #988357 !important;
+  height: 10px !important;
+  top: -3px !important;
+}
+
 @layer base {
   body {
     @apply bg-[#1c1c1c];

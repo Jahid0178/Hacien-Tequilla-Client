@@ -1,9 +1,14 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import { Scrollbar } from "swiper";
+import { partnersIcon, recipeData } from "@/data/data";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "@/components/Buttons/Button";
 import PartnerLogoCard from "@/components/Cards/PartnerLogoCard";
-import { partnersIcon } from "@/data/data";
-import Image from "next/image";
+import "swiper/css/scrollbar";
+import RecipeCard from "@/components/Cards/RecipeCard";
 
 const HomePage = () => {
   return (
@@ -51,6 +56,44 @@ const HomePage = () => {
                 height={450}
               />
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Recipe Section */}
+      <section>
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div>
+              <h4 className="uppercase text-primary text-2xl font-bold mb-4">
+                Cocktail Recipes
+              </h4>
+              <h2 className="text-2xl md:text-6xl mb-4 font-bold">
+                Ways To Enjoy
+              </h2>
+              <p>Order at the bar, or craft in the comfort of your home.</p>
+            </div>
+            <div className="text-end">
+              <Link href="#" className="btn btn-primary">
+                View All
+              </Link>
+            </div>
+          </div>
+          {/* Slider */}
+          <div className="mt-5">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={20}
+              scrollbar={{
+                hide: true,
+              }}
+              modules={[Scrollbar]}
+            >
+              {recipeData.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <RecipeCard data={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>
