@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* img {
+img {
   width: 100%;
-} */
+}
 
 .swiper-wrapper {
   padding-top: 1rem;

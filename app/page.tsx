@@ -13,7 +13,7 @@ import RecipeCard from "@/components/Cards/RecipeCard";
 const HomePage = () => {
   return (
     <>
-      <section className="bg-[#1c1c1c] bg-[url('/assets/images/hero-bg.webp')] text-white h-screen">
+      <section className="bg-[#1c1c1c] bg-[url('/assets/images/hero-bg.webp')] bg-no-repeat text-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div>
@@ -42,18 +42,21 @@ const HomePage = () => {
                 alt="Bottle Yellow"
                 width={180}
                 height={450}
+                className="w-36"
               />
               <Image
                 src="/assets/images/bottle-black.png"
                 alt="Bottle Yellow"
                 width={180}
                 height={450}
+                className="w-36"
               />
               <Image
                 src="/assets/images/bottle-clear.png"
                 alt="Bottle Yellow"
                 width={180}
                 height={450}
+                className="w-36"
               />
             </div>
           </div>
