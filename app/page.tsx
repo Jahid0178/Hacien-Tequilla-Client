@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Scrollbar } from "swiper";
+import { Scrollbar, Autoplay } from "swiper";
 import { partnersIcon, recipeData } from "@/data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "@/components/Buttons/Button";
@@ -86,7 +86,11 @@ const HomePage = () => {
               scrollbar={{
                 hide: true,
               }}
-              modules={[Scrollbar]}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+              }}
+              modules={[Scrollbar, Autoplay]}
             >
               {recipeData.map((item) => (
                 <SwiperSlide key={item.id}>
