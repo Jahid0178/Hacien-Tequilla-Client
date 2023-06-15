@@ -4,11 +4,12 @@ import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="py-5 border">
+    <header className="py-5 fixed top-0 w-full z-100">
       <div className="container">
-        <nav className="flex justify-between items-center">
+        <div className="header-background blur-sm"></div>
+        <nav className="flex justify-between items-center relative">
           <span>
-            <FaBars size={20} className="cursor-pointer" />
+            <FaBars size={25} className="cursor-pointer" color="#fff" />
           </span>
           <Logo src="https://assets.website-files.com/632b356cbea6db8b490879b2/636e61a6e880a28a49265c86_Asset%203.svg" />
           <span>
