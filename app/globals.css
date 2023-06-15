@@ -4,10 +4,18 @@
 
 @layer components {
   .btn {
-    @apply border border-[#988357] px-5 py-2;
+    @apply px-5 py-2;
   }
 
   .btn-primary {
-    @apply bg-[#988357] text-white hover:bg-white hover:text-[#988357] font-bold uppercase rounded;
+    @apply border border-[#988357]  bg-[#988357] text-white hover:bg-white hover:text-[#988357] font-bold uppercase rounded;
+  }
+
+  .btn-secondary {
+    @apply border border-gray-700 bg-gray-600 text-white hover:bg-gray-800 rounded;
+  }
+
+  .text-primary {
+    @apply text-[#988357];
   }
 }
