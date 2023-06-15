@@ -14,7 +14,7 @@
   }
 
   .btn-primary {
-    @apply border border-[#988357]  bg-[#988357] text-white hover:bg-white hover:text-[#988357] font-bold uppercase rounded;
+    @apply border border-[#988357]  bg-[#988357] text-white hover:bg-transparent hover:text-[#988357] font-bold uppercase rounded;
   }
 
   .btn-secondary {
@@ -31,7 +31,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     background-color: transparent;
   }
 }
