@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const PartnerLogoCard = ({ data }) => {
+const PartnerLogoCard = ({ data }: any) => {
   const { src } = data;
 
   return (
