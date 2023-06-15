@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* img {
+  width: 100%;
+} */
+
 @layer base {
+  body {
+    @apply bg-[#1c1c1c];
+  }
+
   section {
-    @apply py-12;
+    @apply py-44 text-white;
   }
 }
 
@@ -18,7 +26,7 @@
   }
 
   .btn-secondary {
-    @apply border border-gray-700 bg-gray-600 text-white hover:bg-gray-800 rounded;
+    @apply border border-[#525252] bg-[#525252] text-white hover:bg-transparent rounded font-bold uppercase;
   }
 
   .text-primary {
