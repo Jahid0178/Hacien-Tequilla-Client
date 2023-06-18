@@ -182,7 +182,7 @@ export const teamMembers: teamMembersProps = [
     name: "Jordan Myers",
     role: "Co-Founder",
     profile:
-      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c769e1a8d65d337b7f2a_Jordan-01%20copy-p-800.webp",
     description:
       "Once a big tequila sceptic - until he discovered a more authentic experience on a visit to Mexico.",
   },
@@ -191,7 +191,7 @@ export const teamMembers: teamMembersProps = [
     name: "Ashley Mitchell",
     role: "Business Development Manager",
     profile:
-      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6374c9bcd3414256a760c7f7_Ashley-01%20copy-p-800.webp",
     description:
       "Knows his way around the bar - in the best way possible - with 15 years of hospitality experience.",
   },
@@ -200,7 +200,7 @@ export const teamMembers: teamMembersProps = [
     name: "Chris Delaney",
     role: "Business Development Manager",
     profile:
-      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/63f6246e71cde4f7b92872af_Chris%20Delaney%20photo-p-800.jpeg",
     description:
       "Has a strong background in the hospitality industry, managing multiple venues across the UK, and curating numerous cocktail menus.",
   },
@@ -209,7 +209,7 @@ export const teamMembers: teamMembersProps = [
     name: "Henry Vaughan",
     role: "Mixologist",
     profile:
-      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c71ce08571d20d4fce0f_Henry-Vaughan%402x%20(1)%20copy.webp",
     description:
       "If he's not inventing new HACIEN cocktails he's inspiring our partners through product training.",
   },
@@ -218,7 +218,7 @@ export const teamMembers: teamMembersProps = [
     name: "Mike Davis",
     role: "Marketing",
     profile:
-      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c6fe26e4e81df16802ea_Mike-Davis%402x%20(1)%20copy.webp",
     description:
       "Brings extensive knowledge of the food and beverage market to our brand strategy and partnerships.",
   },

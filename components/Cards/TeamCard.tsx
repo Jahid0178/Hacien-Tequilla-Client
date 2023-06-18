@@ -6,7 +6,7 @@ const TeamCard = ({ data }: { data: TeamData }) => {
   console.log(data);
 
   return (
-    <div className="relative overflow-hidden group transition-all duration-75">
+    <div className="relative overflow-hidden group transition-all duration-75 h-[450px]">
       <Image
         src={profile}
         alt={name}

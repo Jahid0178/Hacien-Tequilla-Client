@@ -116,7 +116,7 @@ const OurStoryPage = () => {
       <section>
         <Swiper
           slidesPerView={1}
-          spaceBetween={20}
+          spaceBetween={10}
           scrollbar={{
             hide: true,
           }}
@@ -127,6 +127,7 @@ const OurStoryPage = () => {
           breakpoints={{
             640: {
               slidesPerView: 2,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
