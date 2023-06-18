@@ -63,6 +63,41 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Our story section */}
+      <section className="bg-[url('/assets/images/story-bg.jpg')] bg-no-repeat bg-center bg-cover">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div>
+              <Image
+                src="/assets/images/story-img.png"
+                alt="Test tequilla a woman"
+                width={750}
+                height={750}
+                className="rounded"
+              />
+            </div>
+            <div>
+              <h4 className="uppercase text-primary font-bold mb-4">
+                Our Story
+              </h4>
+              <h2 className="text-2xl md:text-7xl mb-4 font-bold uppercase">
+                Hacien Began Life In Jalisco, Mexico.
+              </h2>
+              <p className="mb-4">
+                That’s where we first saw tequila drinkers pause between sips to
+                appreciate the depth of flavour — as the locals have been doing
+                for centuries. It was an experience we didn’t want to leave
+                behind. It inspired us to bring premium tequila home to the UK —
+                and to create a new appreciation for this often overlooked
+                spirit.
+              </p>
+              <Button type="button" className="btn-primary">
+                Our Story
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Video Section */}
       <section>
         <div className="container">
@@ -86,7 +121,7 @@ const HomePage = () => {
               </h2>
               <p>Order at the bar, or craft in the comfort of your home.</p>
             </div>
-            <div className="text-end">
+            <div className="text-start md:text-end">
               <Link href="#" className="btn btn-primary">
                 View All
               </Link>
