@@ -20,7 +20,9 @@ const Footer = () => {
                   <Link href="#">01789293803</Link>
                 </li>
                 <li>
-                  <Link href="#">zahidul.haque767@gmail.com</Link>
+                  <Link href="mailto:zahidul.haque767@gmail.com">
+                    zahidul.haque767@gmail.com
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -30,10 +32,14 @@ const Footer = () => {
               </h3>
               <ul>
                 <li className="mb-1">
-                  <Link href="#">Privacy & Policy</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Privacy & Policy
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#">Terms & Condition</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Terms & Condition
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -45,25 +51,39 @@ const Footer = () => {
               </h3>
               <ul>
                 <li className="mb-1">
-                  <Link href="/">Home</Link>
+                  <Link href="/" className="hover:link__hover">
+                    Home
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">Our Tequila</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Our Tequila
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">Our Story</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Our Story
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">Recipe Builder</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Recipe Builder
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">News</Link>
+                  <Link href="#" className="hover:link__hover">
+                    News
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">Events</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Events
+                  </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#">Contact</Link>
+                  <Link href="#" className="hover:link__hover">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>

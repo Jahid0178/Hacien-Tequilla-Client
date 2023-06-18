@@ -55,4 +55,8 @@
     backdrop-filter: blur(10px);
     background-color: transparent;
   }
+
+  .link__hover {
+    @apply text-[#988357];
+  }
 }
