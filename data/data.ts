@@ -127,3 +127,40 @@ export const recipeData: {
       "The smooth, silky tones of a classic Old Fashioned, with the bolder flavour of our barrel-aged tequila. Sweetened with agave and balanced with bitters.",
   },
 ];
+
+export const productsData: {
+  id: number;
+  flavour: string;
+  title: string;
+  description: string;
+  src: string;
+  colorCode: string;
+}[] = [
+  {
+    id: 1,
+    flavour: "BLANCO",
+    title: "TEQUILA BLANCO",
+    description:
+      "Our 100% agave Tequila Blanco has the clean, aromatic taste of Jalisco's finest blue agave. Smooth and subtle yet full of distinctive flavour. Shake into a cocktail, pour it straight, or serve over ice with your favourite mixer.",
+    src: "/assets/images/bottle-clear.png",
+    colorCode: "#6DD4CA",
+  },
+  {
+    id: 2,
+    flavour: "PINEAPPLE",
+    title: "PINEAPPLE TEQUILA BLANCO",
+    description:
+      "Our signature Tequila Blanco, infused with sweet, aromatic pineapple to create an easy-drinking, smooth and naturally flavoured Tequila. Shake into a cocktail, pour it straight, or serve over ice with your favourite mixer.",
+    src: "/assets/images/bottle-yellow.png",
+    colorCode: "#FFC000",
+  },
+  {
+    id: 3,
+    flavour: "CRISTALINO",
+    title: "AÑEJO CRISTALINO",
+    description:
+      "Our Tequila Añejo Cristalino is classically barrel-aged, with the distinctive smooth taste of Jalisco’s finest agave. Named for its crystal clear complexion, it’s filtered with charcoal to remove colour and retain a bold and complex flavour. Best served over ice and enjoyed slowly.",
+    src: "/assets/images/bottle-black.png",
+    colorCode: "#696868",
+  },
+];

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Scrollbar, Autoplay } from "swiper";
-import { partnersIcon, recipeData } from "@/data/data";
+import { partnersIcon, productsData, recipeData } from "@/data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Button from "@/components/Buttons/Button";
 import PartnerLogoCard from "@/components/Cards/PartnerLogoCard";
@@ -61,6 +61,56 @@ const HomePage = () => {
               />
             </div>
           </div>
+        </div>
+      </section>
+      {/* Product section */}
+      <section>
+        <div className="container">
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
+            }}
+          >
+            {productsData.map((productData) => {
+              const { id, flavour, title, description, src, colorCode } =
+                productData;
+              console.log(colorCode);
+              return (
+                <SwiperSlide key={id}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+                    <div>
+                      <h2
+                        className="text-3xl md:text-5xl font-bold"
+                        style={{ color: `${colorCode}` }}
+                      >
+                        {flavour}
+                      </h2>
+                      <h4 className="mb-4 text-2xl font-bold">{title}</h4>
+                      <p className="mb-4 font-bold">{description}</p>
+                      <div className="flex gap-4">
+                        <Button type="button" className="btn-secondary">
+                          Learn More
+                        </Button>
+                        <Button type="button" className="btn-primary">
+                          Shop Now
+                        </Button>
+                      </div>
+                    </div>
+                    <div>
+                      <Image
+                        src={src}
+                        alt={title}
+                        width={150}
+                        height={350}
+                        className="mx-auto"
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </section>
       {/* Our story section */}
