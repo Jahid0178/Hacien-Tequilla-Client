@@ -9,6 +9,7 @@ import Button from "@/components/Buttons/Button";
 import PartnerLogoCard from "@/components/Cards/PartnerLogoCard";
 import "swiper/css/scrollbar";
 import RecipeCard from "@/components/Cards/RecipeCard";
+import { FaPlay } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -62,6 +63,16 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Video Section */}
+      <section>
+        <div className="container">
+          <div className="bg-[url('/assets/images/video-bg.png')] bg-no-repeat py-80 bg-center text-center rounded-md border border-transparent hover:border hover:border-[#988357]">
+            <button className="w-20 h-20 bg-[#525252] p-2 rounded-full hover:bg-[#988357]">
+              <FaPlay size={30} className="mx-auto" />
+            </button>
+          </div>
+        </div>
+      </section>
       {/* Recipe Section */}
       <section>
         <div className="container">
@@ -84,7 +95,7 @@ const HomePage = () => {
           {/* Slider */}
           <div className="mt-5">
             <Swiper
-              slidesPerView={4}
+              slidesPerView={1}
               spaceBetween={20}
               scrollbar={{
                 hide: true,
@@ -92,6 +103,19 @@ const HomePage = () => {
               loop={true}
               autoplay={{
                 delay: 2000,
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
               }}
               modules={[Scrollbar, Autoplay]}
             >
