@@ -11,3 +11,11 @@ export type ButtonProps = {
 export type LogoProps = {
   src: string;
 };
+
+export type teamMembersProps = {
+  id: number | string;
+  name: string;
+  role: string;
+  profile: string;
+  description: string;
+}[];

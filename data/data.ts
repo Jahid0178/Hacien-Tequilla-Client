@@ -1,3 +1,5 @@
+import { teamMembersProps } from "@/types/types";
+
 export const partnersIcon: { id: number | string; src: string }[] = [
   {
     id: 1,
@@ -162,5 +164,62 @@ export const productsData: {
       "Our Tequila Añejo Cristalino is classically barrel-aged, with the distinctive smooth taste of Jalisco’s finest agave. Named for its crystal clear complexion, it’s filtered with charcoal to remove colour and retain a bold and complex flavour. Best served over ice and enjoyed slowly.",
     src: "/assets/images/bottle-black.png",
     colorCode: "#696868",
+  },
+];
+
+export const teamMembers: teamMembersProps = [
+  {
+    id: 1,
+    name: "Seb Francis",
+    role: "Co-Founder",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "On a mission to bring a more accessible and authentic premium tequila experience to the UK market.",
+  },
+  {
+    id: 2,
+    name: "Jordan Myers",
+    role: "Co-Founder",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "Once a big tequila sceptic - until he discovered a more authentic experience on a visit to Mexico.",
+  },
+  {
+    id: 3,
+    name: "Ashley Mitchell",
+    role: "Business Development Manager",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "Knows his way around the bar - in the best way possible - with 15 years of hospitality experience.",
+  },
+  {
+    id: 4,
+    name: "Chris Delaney",
+    role: "Business Development Manager",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "Has a strong background in the hospitality industry, managing multiple venues across the UK, and curating numerous cocktail menus.",
+  },
+  {
+    id: 5,
+    name: "Henry Vaughan",
+    role: "Mixologist",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "If he's not inventing new HACIEN cocktails he's inspiring our partners through product training.",
+  },
+  {
+    id: 6,
+    name: "Mike Davis",
+    role: "Marketing",
+    profile:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6346c7820f6a407fdd4d9427_seb-01%20copy-p-800.webp",
+    description:
+      "Brings extensive knowledge of the food and beverage market to our brand strategy and partnerships.",
   },
 ];

@@ -5,7 +5,7 @@ import { BsBag } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <header className="py-5 fixed top-0 w-full z-100">
+    <header className="py-5 fixed top-0 w-full z-50">
       <div className="container">
         <div className="header-background blur-sm"></div>
         <nav className="flex justify-between items-center relative">

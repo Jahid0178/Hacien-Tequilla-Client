@@ -60,3 +60,9 @@
     @apply text-[#988357];
   }
 }
+
+@media only screen and (max-width: 767px) {
+  section {
+    @apply py-24;
+  }
+}

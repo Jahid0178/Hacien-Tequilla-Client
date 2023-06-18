@@ -75,7 +75,6 @@ const HomePage = () => {
             {productsData.map((productData) => {
               const { id, flavour, title, description, src, colorCode } =
                 productData;
-              console.log(colorCode);
               return (
                 <SwiperSlide key={id}>
                   <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
