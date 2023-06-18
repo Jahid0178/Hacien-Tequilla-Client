@@ -114,6 +114,12 @@ const OurStoryPage = () => {
       </section>
       {/* Team section */}
       <section>
+        <div className="container mb-4">
+          <h2 className="text-primary font-bold text-2xl uppercase">
+            Who we are?
+          </h2>
+          <h2 className="text-4xl md:text-6xl font-bold">Our Team</h2>
+        </div>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -130,7 +136,7 @@ const OurStoryPage = () => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 10,
             },
             1024: {
@@ -146,6 +152,42 @@ const OurStoryPage = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </section>
+      <section>
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div>
+              <h2 className="text-2xl md:text-6xl font-bold mb-4">
+                WHY TEQUILA?
+              </h2>
+              <p className="mb-4">
+                Travelling through Mexico and discovering how tequila was meant
+                to be enjoyed changed our whole perception of the spirit.
+              </p>
+              <p className="mb-4">
+                We want to take our customers on the same journey — discovering
+                the leap in quality that the authentic version offers, and
+                appreciating its history and heritage. To us, HACIEN is more
+                than just a label.
+              </p>
+              <p>
+                It’s a manifesto to revolutionise how this classic spirit is
+                served and enjoyed. And it’s an open invitation to rediscover
+                your relationship with tequila.
+              </p>
+            </div>
+            <div className="relative">
+              <Image
+                src="/assets/images/bottle-black-2x.png"
+                alt="black bottle tequila"
+                width={400}
+                height={250}
+                className="mx-auto"
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-[#1C1C1C]"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
