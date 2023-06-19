@@ -3,7 +3,6 @@ import Image from "next/image";
 
 const TeamCard = ({ data }: { data: TeamData }) => {
   const { name, role, description, profile } = data;
-  console.log(data);
 
   return (
     <div className="relative overflow-hidden group transition-all duration-75 h-[450px]">
