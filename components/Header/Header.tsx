@@ -67,7 +67,7 @@ const Header = () => {
             Our Story
           </Link>
           <Link
-            href="/recipe"
+            href="/recipe-builder"
             className="inline-block my-8 text-4xl"
             onClick={() => setIsOpen(false)}
           >
