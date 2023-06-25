@@ -33,6 +33,12 @@ export const recipeData: {
   category: string;
   title: string;
   description: string;
+  recipeInfo: {
+    difficulty: string;
+    ice: string;
+    glass: string;
+    garnish: string;
+  };
 }[] = [
   {
     id: 1,
@@ -41,6 +47,12 @@ export const recipeData: {
     title: "WATERMELON MARGARITA",
     description:
       "Mexico’s favourite classic - the Margarita - now made extra refreshing with cucumber, watermelon and 100% agave spirit.",
+    recipeInfo: {
+      difficulty: "Intermediate",
+      ice: "Cubed",
+      glass: "Rocks",
+      garnish: "Watermelon wedge and a mint sprig",
+    },
   },
   {
     id: 2,
@@ -49,6 +61,12 @@ export const recipeData: {
     title: "MEXICAN 75",
     description:
       "A French 75 with a Jalisco twist. Put some bubbles in your Tequila Blanco with this classic Champagne cocktail.",
+    recipeInfo: {
+      difficulty: "Intermediate",
+      ice: "Served Up",
+      glass: "Champagne flute",
+      garnish: "Raspberries & Mint",
+    },
   },
   {
     id: 3,
@@ -57,6 +75,12 @@ export const recipeData: {
     title: "MINT & CUCUMBER SPRITZ",
     description:
       "A light and fuss-free spritz with Tequila, Sauvignon Blanc, agave & lime. A clean and crisp celebration of our original Blanco flavour.",
+    recipeInfo: {
+      difficulty: "Easy",
+      ice: "Cubed",
+      glass: "Wine glass",
+      garnish: "Mint & Cucumber",
+    },
   },
   {
     id: 4,
@@ -65,6 +89,12 @@ export const recipeData: {
     title: "BASIL & GRAPEFRUIT TOMMY'S",
     description:
       "A short, refreshing drink combining our Tequila Blanco, zingy grapefruit and fresh basil - perfect for a summer BBQ.",
+    recipeInfo: {
+      difficulty: "Easy",
+      ice: "Cubed",
+      glass: "Rocks",
+      garnish: "Basil & grapefruit",
+    },
   },
   {
     id: 5,
@@ -73,6 +103,12 @@ export const recipeData: {
     title: "DUSK APERITIVO",
     description:
       "This light and delicate HACIEN based aperitif uses Aperol and Lillet Blanc to get the mouth watering.",
+    recipeInfo: {
+      difficulty: "Intermediate",
+      ice: "Cubed",
+      glass: "Rocks",
+      garnish: "Orange slice",
+    },
   },
   {
     id: 6,
@@ -80,6 +116,12 @@ export const recipeData: {
     category: "TEQUILA BLANCO",
     title: "HACIEN BLOODY MARY",
     description: "The perfect way to start the morning after... HACIEN style.",
+    recipeInfo: {
+      difficulty: "Advanced",
+      ice: "Cubed",
+      glass: "Highball",
+      garnish: "Rosemary & olives",
+    },
   },
   {
     id: 7,
@@ -88,6 +130,12 @@ export const recipeData: {
     title: "HACIEN ESPRESSO MARTINI",
     description:
       "An indulgent twist on the espresso martini, using our Tequila Añejo Cristalino, orange cognac liqueur, coffee liqueur and caramel syrup.",
+    recipeInfo: {
+      difficulty: "Easy",
+      ice: "Served Up",
+      glass: "Coupe",
+      garnish: "Orange Twist",
+    },
   },
   {
     id: 8,
@@ -95,6 +143,12 @@ export const recipeData: {
     category: "TEQUILA BLANCO",
     title: "HACIEN PORNSTAR MARTINI",
     description: "A HACIEN twist on a contemporary classic cocktail.",
+    recipeInfo: {
+      difficulty: "Easy",
+      ice: "Served Up",
+      glass: "Coupe",
+      garnish: "Passionfruit",
+    },
   },
   {
     id: 9,
@@ -103,6 +157,12 @@ export const recipeData: {
     title: "COCONUT & CHILLI MARGARITA",
     description:
       "Inspired by the flavours of Thailand, this beautifully balanced drink certainly packs a punch. HACIEN Tequila Blanco shaken with chilli, ginger, coconut and lime.",
+    recipeInfo: {
+      difficulty: "Intermediate",
+      ice: "Served Up",
+      glass: "Coupe",
+      garnish: "Lime Twist",
+    },
   },
   {
     id: 10,
@@ -111,6 +171,12 @@ export const recipeData: {
     title: "BOTANICAL GARDEN",
     description:
       "A wonderfully crisp and herbaceous drink that’s bound to get the taste buds going.",
+    recipeInfo: {
+      difficulty: "Intermediate",
+      ice: "Served Up",
+      glass: "Coupe",
+      garnish: "Basil leaf",
+    },
   },
   {
     id: 11,
@@ -119,6 +185,12 @@ export const recipeData: {
     title: "GRAPE & ELDERFLOWER SPRITZ",
     description:
       "A revitalising pairing of elderflower and grapes with vibrant Prosecco and our smooth, subtle Tequila Blanco.",
+    recipeInfo: {
+      difficulty: "Advanced",
+      ice: "Cubed",
+      glass: "Highball",
+      garnish: "Skewered Grapes & a Mint Sprig",
+    },
   },
   {
     id: 12,
@@ -127,6 +199,12 @@ export const recipeData: {
     title: "CRISTALINO OLD FASHIONED",
     description:
       "The smooth, silky tones of a classic Old Fashioned, with the bolder flavour of our barrel-aged tequila. Sweetened with agave and balanced with bitters.",
+    recipeInfo: {
+      difficulty: "Easy",
+      ice: "Cubed",
+      glass: "Rocks",
+      garnish: "Orange Twist",
+    },
   },
 ];
 
