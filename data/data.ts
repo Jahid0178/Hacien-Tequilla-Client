@@ -301,3 +301,168 @@ export const teamMembers: teamMembersProps = [
       "Brings extensive knowledge of the food and beverage market to our brand strategy and partnerships.",
   },
 ];
+
+export const upcomingEvents: {
+  id: number;
+  imageSrc: string;
+  name: string;
+  date: string;
+  time: string;
+  location: string;
+}[] = [
+  {
+    id: 1,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6462053a162d6947a07d74f6_Screenshot%202023-05-15%20at%2011.10.46-p-500.png",
+    name: "Tequila Town Festival",
+    date: "August 25, 2023",
+    time: "12.00",
+    location:
+      "Copeland Gallery, Unit 9, Copeland Park, 133 Copeland Rd, London, SE15 3SN",
+  },
+  {
+    id: 2,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/63d2a8898c266aeed77539d2_Screenshot%202023-01-26%20at%2016.08.36-p-500.png",
+    name: "HACIEN AT IMBIBE LIVE",
+    date: "July 3, 2023",
+    time: "12.00",
+    location: "Olympia London",
+  },
+  {
+    id: 3,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6489aa4039ebe8144aeaf709_Screenshot%202023-06-14%20at%2012.53.24.png",
+    name: "Henley Festival",
+    date: "July 5, 2023",
+    time: "12.00",
+    location: "Henley Bridge, Henley-on-Thames, RG9 2LY",
+  },
+  {
+    id: 4,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/645e02d546082e012946c198_Screenshot%202023-05-12%20at%2010.11.38-p-500.png",
+    name: "Tequila & Mezcal Fest",
+    date: "September 8, 2023",
+    time: "12.30",
+    location: "Studio 9294 - Hackney Wick",
+  },
+];
+
+export const pastEvents: {
+  id: number;
+  imageSrc: string;
+  name: string;
+  date: string;
+  time: string;
+  location: string;
+}[] = [
+  {
+    id: 1,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6462053a162d6947a07d74f6_Screenshot%202023-05-15%20at%2011.10.46-p-500.png",
+    name: "Summer Music Festival",
+    date: "August 25, 2023",
+    time: "12.00",
+    location: "Central Park, New York City, USA",
+  },
+  {
+    id: 2,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/63d2a8898c266aeed77539d2_Screenshot%202023-01-26%20at%2016.08.36-p-500.png",
+    name: "Art Exhibition Showcase",
+    date: "July 3, 2023",
+    time: "12.00",
+    location: "Metropolitan Museum of Art, New York City, USA",
+  },
+  {
+    id: 3,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6489aa4039ebe8144aeaf709_Screenshot%202023-06-14%20at%2012.53.24.png",
+    name: "Cultural Dance Performance",
+    date: "July 5, 2023",
+    time: "12.00",
+    location: "Royal Albert Hall, London, UK",
+  },
+  {
+    id: 4,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/645e02d546082e012946c198_Screenshot%202023-05-12%20at%2010.11.38-p-500.png",
+    name: "Food and Wine Festival",
+    date: "September 8, 2023",
+    time: "12.30",
+    location: "Napa Valley, California, USA",
+  },
+  {
+    id: 5,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6462053a162d6947a07d74f6_Screenshot%202023-05-15%20at%2011.10.46-p-500.png",
+    name: "International Film Festival",
+    date: "October 12, 2023",
+    time: "18.00",
+    location: "Cannes, France",
+  },
+  {
+    id: 6,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/63d2a8898c266aeed77539d2_Screenshot%202023-01-26%20at%2016.08.36-p-500.png",
+    name: "Fashion Week",
+    date: "September 20, 2023",
+    time: "14.00",
+    location: "Milan, Italy",
+  },
+  {
+    id: 7,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6489aa4039ebe8144aeaf709_Screenshot%202023-06-14%20at%2012.53.24.png",
+    name: "Tech Conference",
+    date: "November 5, 2023",
+    time: "10.00",
+    location: "San Francisco, California, USA",
+  },
+  {
+    id: 8,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/645e02d546082e012946c198_Screenshot%202023-05-12%20at%2010.11.38-p-500.png",
+    name: "Wine Tasting Event",
+    date: "October 30, 2023",
+    time: "16.00",
+    location: "Barcelona, Spain",
+  },
+  {
+    id: 9,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6462053a162d6947a07d74f6_Screenshot%202023-05-15%20at%2011.10.46-p-500.png",
+    name: "Artisan Market",
+    date: "November 15, 2023",
+    time: "11.00",
+    location: "Brooklyn, New York City, USA",
+  },
+  {
+    id: 10,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/63d2a8898c266aeed77539d2_Screenshot%202023-01-26%20at%2016.08.36-p-500.png",
+    name: "Jazz Festival",
+    date: "October 8, 2023",
+    time: "19.30",
+    location: "New Orleans, Louisiana, USA",
+  },
+  {
+    id: 11,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/6489aa4039ebe8144aeaf709_Screenshot%202023-06-14%20at%2012.53.24.png",
+    name: "Carnival Parade",
+    date: "February 28, 2024",
+    time: "15.00",
+    location: "Rio de Janeiro, Brazil",
+  },
+  {
+    id: 12,
+    imageSrc:
+      "https://assets.website-files.com/632dbcb1ceeecc08dd04742c/645e02d546082e012946c198_Screenshot%202023-05-12%20at%2010.11.38-p-500.png",
+    name: "Beer Festival",
+    date: "September 22, 2023",
+    time: "16.00",
+    location: "Munich, Germany",
+  },
+];
