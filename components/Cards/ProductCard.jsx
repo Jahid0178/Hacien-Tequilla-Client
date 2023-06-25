@@ -7,7 +7,7 @@ const ProductCard = ({ data }) => {
   const { src, title, id } = data;
   return (
     <Link href={`/recipe-builder/${id}`}>
-      <div className="rounded overflow-hidden bg-[#2F2F2F] group border border-transparent hover:border-[#988357] transition-all ease-in-out duration-300">
+      <div className="rounded overflow-hidden bg-[#2F2F2F] group border border-transparent hover:border-[#988357] transition-all ease-in-out duration-300 h-full">
         <Image
           src={src}
           alt={title}
