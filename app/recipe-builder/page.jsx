@@ -1,8 +1,21 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
 import ProductCard from "../../components/Cards/ProductCard";
 import SearchBar from "../../components/Inputs/SearchBar";
 import { recipeData } from "../../data/data";
 
-const recipeBuilderPage = () => {
+const RecipeBuilderPage = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const newRecipeData = recipeData.filter((item) =>
+      item.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setData(newRecipeData);
+  }, [searchValue]);
+
   return (
     <section>
       <div className="container">
@@ -10,17 +23,20 @@ const recipeBuilderPage = () => {
           <div>
             <h4 className="text-primary uppercase">Tequila Cocktails</h4>
             <h2 className="text-4xl uppercase font-bold">Recipe Builder</h2>
+            <h5 className="mt-2">Total Data Found: {data.length}</h5>
           </div>
-          <SearchBar />
+          <SearchBar setSearchValue={setSearchValue} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {recipeData.map((recipe) => (
-            <ProductCard key={recipe.id} data={recipe} />
-          ))}
+          {data.length > 0 ? (
+            data.map((recipe) => <ProductCard key={recipe.id} data={recipe} />)
+          ) : (
+            <p>No recipes found.</p>
+          )}
         </div>
       </div>
     </section>
   );
 };
 
-export default recipeBuilderPage;
+export default RecipeBuilderPage;

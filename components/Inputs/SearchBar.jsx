@@ -2,11 +2,11 @@
 
 import { BsSearch } from "react-icons/bs";
 
-const SearchBar = () => {
+const SearchBar = ({ setSearchValue }) => {
   const handleSubmitForm = (e) => {
     e.preventDefault();
     const searchValue = e.target[0].value;
-    console.log(searchValue);
+    setSearchValue(searchValue);
     e.target[0].value = "";
   };
   return (
