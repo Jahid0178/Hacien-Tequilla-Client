@@ -19,7 +19,7 @@ const RecipeBuilderPage = () => {
   return (
     <section>
       <div className="container">
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex flex-col align-start md:flex-row justify-between md:items-center gap-4 mb-6">
           <div>
             <h4 className="text-primary uppercase">Tequila Cocktails</h4>
             <h2 className="text-4xl uppercase font-bold">Recipe Builder</h2>
