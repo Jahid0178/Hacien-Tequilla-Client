@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export type ButtonProps = {
@@ -19,3 +18,25 @@ export type teamMembersProps = {
   profile: string;
   description: string;
 }[];
+
+export type EventDataProps = {
+  data: {
+    id: number;
+    imageSrc: string;
+    name: string;
+    date: string;
+    time: string;
+    location: string;
+  };
+};
+
+export type ProductDataProps = {
+  data: {
+    id: number;
+    flavour: string;
+    title: string;
+    description: string;
+    src: string;
+    colorCode: string;
+  };
+};
