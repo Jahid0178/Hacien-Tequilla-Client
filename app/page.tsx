@@ -91,9 +91,9 @@ const HomePage = () => {
                         <Button type="button" className="btn-secondary">
                           Learn More
                         </Button>
-                        <Button type="button" className="btn-primary">
+                        <Link href="/our-tequila" className="btn btn-primary">
                           Shop Now
-                        </Button>
+                        </Link>
                       </div>
                     </div>
                     <div>
