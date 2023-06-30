@@ -1,23 +1,51 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, SetStateAction } from "react";
 import Image from "next/image";
 import { recipeData } from "../../../data/data";
 import Button from "../../../components/Buttons/Button";
+import { RecipeDetailsParamsProps } from "@/types/types";
 
-const RecipeDetailsPage = ({ params }) => {
-  const [filterData, setFilterData] = useState([]);
+interface Recipe {
+  id: string | number;
+  src: string;
+  category: string;
+  title: string;
+  description: string;
+  recipeInfo: {
+    difficulty: string;
+    ice: string;
+    glass: string;
+    garnish: string;
+  };
+}
+
+interface RecipeInfo {
+  difficulty: string;
+  ice: string;
+  glass: string;
+  garnish: string;
+}
+
+const RecipeDetailsPage = ({ params }: RecipeDetailsParamsProps) => {
+  const [filterData, setFilterData] = useState<Recipe[]>([]);
   const { recipeId } = params;
 
   useEffect(() => {
     const filterRecipes = recipeData.filter(
       (recipe) => recipe.id === +recipeId
     );
+    console.log(filterRecipes);
     setFilterData(filterRecipes);
   }, [recipeId]);
 
-  const { category, description, src, title, recipeInfo } =
-    filterData.length > 0 ? filterData[0] : {};
+  const {
+    category = "",
+    description = "",
+    src = "/",
+    title = "",
+    recipeInfo = {} as RecipeInfo,
+  } = filterData.length > 0 ? filterData[0] : {};
 
   return (
     <>

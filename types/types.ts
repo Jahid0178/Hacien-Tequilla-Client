@@ -40,3 +40,9 @@ export type ProductDataProps = {
     colorCode: string;
   };
 };
+
+export type RecipeDetailsParamsProps = {
+  params: {
+    recipeId: string;
+  };
+};
