@@ -1,9 +1,10 @@
 "use client";
 
+import { EventDataProps } from "@/types/types";
 import Image from "next/image";
 import { FaCalendarAlt, FaClock, FaLocationArrow } from "react-icons/fa";
 
-const EventCard = ({ data }) => {
+const EventCard = ({ data }: EventDataProps) => {
   const { imageSrc, name, date, time, location } = data;
   return (
     <div className="bg-[#2B2A2A] h-full rounded-md overflow-hidden border border-transparent hover:border-[#988357] transition-all ease-in-out delay-100">
