@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, SetStateAction } from "react";
 import ProductCard from "../../components/Cards/ProductCard";
 import SearchBar from "../../components/Inputs/SearchBar";
 import { recipeData } from "../../data/data";
