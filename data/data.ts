@@ -141,7 +141,7 @@ export const recipeData: {
     id: 8,
     src: "/assets/images/recipe/slider-8.jpeg",
     category: "TEQUILA BLANCO",
-    title: "HACIEN PORNSTAR MARTINI",
+    title: "HACIEN ROCKSTAR MARTINI",
     description: "A HACIEN twist on a contemporary classic cocktail.",
     recipeInfo: {
       difficulty: "Easy",
