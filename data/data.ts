@@ -215,6 +215,11 @@ export const productsData: {
   description: string;
   src: string;
   colorCode: string;
+  testProfile?: string | undefined;
+  aroma?: string | undefined;
+  color?: string | undefined;
+  size?: string | undefined;
+  price?: number | undefined;
 }[] = [
   {
     id: 1,
@@ -224,6 +229,12 @@ export const productsData: {
       "Our 100% agave Tequila Blanco has the clean, aromatic taste of Jalisco's finest blue agave. Smooth and subtle yet full of distinctive flavour. Shake into a cocktail, pour it straight, or serve over ice with your favourite mixer.",
     src: "/assets/images/bottle-clear.png",
     colorCode: "#6DD4CA",
+    testProfile:
+      "Peppery Spice, Herby Agave, Citrus Sorbet and Wisps of Tropical Fruit",
+    aroma: "Fresh Mint, Herbal, Straw and Citrus",
+    color: "Clear",
+    size: "70cl",
+    price: 54.95,
   },
   {
     id: 2,
@@ -233,6 +244,12 @@ export const productsData: {
       "Our signature Tequila Blanco, infused with sweet, aromatic pineapple to create an easy-drinking, smooth and naturally flavoured Tequila. Shake into a cocktail, pour it straight, or serve over ice with your favourite mixer.",
     src: "/assets/images/bottle-yellow.png",
     colorCode: "#FFC000",
+    testProfile:
+      "Ripe Pineapple, Crunchy Citrus Sorbet, Earthy Agave and Prickly Pepper",
+    aroma: "Citrus, Pineapple, Straw, Mint",
+    color: "Clear",
+    size: "70cl",
+    price: 59.95,
   },
   {
     id: 3,
@@ -242,6 +259,12 @@ export const productsData: {
       "Our Tequila Añejo Cristalino is classically barrel-aged, with the distinctive smooth taste of Jalisco’s finest agave. Named for its crystal clear complexion, it’s filtered with charcoal to remove colour and retain a bold and complex flavour. Best served over ice and enjoyed slowly.",
     src: "/assets/images/bottle-black.png",
     colorCode: "#696868",
+    testProfile:
+      "Notes of Honey, Forest Floor, Roasted Agave, Sweet Toffee, Truffle and Pink Peppercorn",
+    aroma: "Caramel, Vanilla, Butterscotch",
+    color: "Clear",
+    size: "70cl",
+    price: 104.95,
   },
 ];
 
