@@ -41,6 +41,22 @@ export type ProductDataProps = {
   };
 };
 
+export type ProductCardDataProps = {
+  data: {
+    id: number | string;
+    src: string;
+    category: string;
+    title: string;
+    description: string;
+    recipeInfo: {
+      difficulty: string;
+      ice: string;
+      glass: string;
+      garnish: string;
+    };
+  };
+};
+
 export type RecipeDetailsParamsProps = {
   params: {
     recipeId: string;
