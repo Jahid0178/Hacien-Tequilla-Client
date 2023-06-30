@@ -85,15 +85,6 @@ const RecipeDetailsPage = ({ params }: RecipeDetailsParamsProps) => {
                   <p>{recipeInfo?.garnish}</p>
                 </div>
               </div>
-              <div className="mt-10">
-                <Button
-                  className="btn-primary"
-                  type="button"
-                  onClick={() => console.log("clicked")}
-                >
-                  Add To Cart
-                </Button>
-              </div>
             </div>
             <div>
               <Image
