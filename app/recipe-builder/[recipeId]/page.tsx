@@ -35,7 +35,6 @@ const RecipeDetailsPage = ({ params }: RecipeDetailsParamsProps) => {
     const filterRecipes = recipeData.filter(
       (recipe) => recipe.id === +recipeId
     );
-    console.log(filterRecipes);
     setFilterData(filterRecipes);
   }, [recipeId]);
 
