@@ -1,8 +1,8 @@
 import { ButtonProps } from "@/types/types";
 
-const Button = ({ className, children, type }: ButtonProps) => {
+const Button = ({ className, children, type, onClick }: ButtonProps) => {
   return (
-    <button className={`btn ${className}`} type={type}>
+    <button className={`btn ${className}`} type={type} onClick={onClick}>
       {children}
     </button>
   );
