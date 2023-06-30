@@ -25,9 +25,9 @@ const Header = () => {
           </span>
           <Logo src="https://assets.website-files.com/632b356cbea6db8b490879b2/636e61a6e880a28a49265c86_Asset%203.svg" />
           <span className="flex gap-4">
-            <Button className="btn btn-primary" type="button">
+            <Link href="/our-tequila" className="btn btn-primary">
               Shop Now
-            </Button>
+            </Link>
             <Button className="btn btn-secondary" type="button">
               <BsBag size={20} />
             </Button>
