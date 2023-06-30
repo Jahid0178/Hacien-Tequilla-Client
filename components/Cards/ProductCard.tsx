@@ -1,10 +1,11 @@
 "use client";
 
-import { ProductDataProps } from "@/types/types";
+import { ProductCardDataProps } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductCard = ({ data }: ProductDataProps) => {
+const ProductCard = ({ data }: ProductCardDataProps) => {
+  console.log(data);
   const { src, title, id } = data;
   return (
     <Link href={`/recipe-builder/${id}`}>

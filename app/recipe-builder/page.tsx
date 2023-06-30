@@ -5,9 +5,23 @@ import ProductCard from "../../components/Cards/ProductCard";
 import SearchBar from "../../components/Inputs/SearchBar";
 import { recipeData } from "../../data/data";
 
+type NewRecipeData = {
+  id: number | string;
+  src: string;
+  category: string;
+  title: string;
+  description: string;
+  recipeInfo: {
+    difficulty: string;
+    ice: string;
+    glass: string;
+    garnish: string;
+  };
+};
+
 const RecipeBuilderPage = () => {
   const [searchValue, setSearchValue] = useState("");
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<NewRecipeData[]>([]);
 
   useEffect(() => {
     const newRecipeData = recipeData.filter((item) =>
