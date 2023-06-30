@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export type ButtonProps = {
   className: string;
   children: ReactNode;
-  onClick?: () => {};
+  onClick?: () => void;
   type: "button" | "submit" | "reset";
 };
 
