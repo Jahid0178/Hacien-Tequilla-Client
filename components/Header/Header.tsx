@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "../Buttons/Button";
 import Logo from "./Logo/Logo";
 import { FaBars } from "react-icons/fa";
@@ -10,6 +10,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="py-5 fixed top-0 w-full z-50">
       <div className="container">
@@ -36,7 +37,7 @@ const Header = () => {
       </div>
       {isOpen && (
         <div
-          className={`absolute top-0 left-0 right-0 bottom-0 px-4 bg-black bg-opacity-95 w-full h-screen text-white py-10 md:px-48 flex flex-col justify-between transform ${
+          className={`absolute top-0 left-0 right-0 bottom-0 px-4 bg-black bg-opacity-95 w-full h-screen max-h-screen overflow-y-auto text-white py-10 md:px-48 flex flex-col justify-between transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition duration-300 ease-in-out`}
         >
@@ -44,6 +45,7 @@ const Header = () => {
             size={40}
             onClick={() => setIsOpen(false)}
             className="absolute top-4 left-4"
+            cursor="pointer"
           />
           <Link
             href="/"
