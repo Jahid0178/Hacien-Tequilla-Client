@@ -56,32 +56,32 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/our-tequila" className="hover:link__hover">
                     Our Tequila
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/our-story" className="hover:link__hover">
                     Our Story
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/recipe-builder" className="hover:link__hover">
                     Recipe Builder
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/news" className="hover:link__hover">
                     News
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/events" className="hover:link__hover">
                     Events
                   </Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="#" className="hover:link__hover">
+                  <Link href="/contact-us" className="hover:link__hover">
                     Contact
                   </Link>
                 </li>
