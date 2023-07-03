@@ -37,8 +37,43 @@ const HomePage = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex gap-4 justify-center">
-              <Image
+            <div className="">
+              <Swiper
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                }}
+                modules={[Autoplay]}
+              >
+                <SwiperSlide>
+                  <Image
+                    src="/assets/images/bottle-yellow.png"
+                    alt="Bottle Yellow"
+                    width={180}
+                    height={450}
+                    className="w-48 mx-auto"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/assets/images/bottle-black.png"
+                    alt="Bottle Yellow"
+                    width={180}
+                    height={450}
+                    className="w-48 mx-auto"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/assets/images/bottle-clear.png"
+                    alt="Bottle Yellow"
+                    width={180}
+                    height={450}
+                    className="w-48 mx-auto"
+                  />
+                </SwiperSlide>
+              </Swiper>
+              {/* <Image
                 src="/assets/images/bottle-yellow.png"
                 alt="Bottle Yellow"
                 width={180}
@@ -58,7 +93,7 @@ const HomePage = () => {
                 width={180}
                 height={450}
                 className="w-36"
-              />
+              /> */}
             </div>
           </div>
         </div>
