@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProductCard = ({ data }: ProductCardDataProps) => {
-  console.log(data);
   const { src, title, id } = data;
   return (
     <Link href={`/recipe-builder/${id}`}>
